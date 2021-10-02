@@ -1,6 +1,7 @@
 import './calculadora.css'
 import { useState } from 'react';
 
+
 function ResultadoSoma({ a, b }) {
   const [values, setValues] = useState({ a, b });
   const resultado = values.a + values.b;
@@ -19,7 +20,7 @@ function ResultadoSoma({ a, b }) {
         <input id='b' type="text" name='b' placeholder='b' value={values.b} onChange={onChange} />
       </div>
       <div className='PagesCalculadora--div--resultado'> 
-        <p>  A soma de {values.a} + {values.b} = {resultado}  </p>
+        <p > A soma de {values.a} + {values.b} = {resultado}  </p>
       </div>
     </div>
   );
