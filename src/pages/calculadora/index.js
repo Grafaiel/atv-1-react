@@ -1,3 +1,4 @@
+import './calculadora.css'
 import { useState } from 'react';
 
 function ResultadoSoma({ a, b }) {
@@ -11,18 +12,22 @@ function ResultadoSoma({ a, b }) {
     });
   }
 
-    return (
-    <div>
-      <input type="text" name='a' placeholder='a' value={values.a} onChange={onChange} />
-      <input type="text" name='b' placeholder='b' value={values.b} onChange={onChange} />
-      <div> A soma de {values.a} + {values.b} = {resultado} </div> 
+  return (
+    <div className='PagesCalculadora--div'>
+      <div className='PagesCalculadora--div--input'>
+        <input type="text" name='a' placeholder='a' value={values.a} onChange={onChange} />
+        <input id='b' type="text" name='b' placeholder='b' value={values.b} onChange={onChange} />
+      </div>
+      <div className='PagesCalculadora--div--resultado'> 
+        <p>  A soma de {values.a} + {values.b} = {resultado}  </p>
+      </div>
     </div>
-    );
+  );
 }
 
 export default function PagesCalculadora() {
   return (
-    <div>
+    <div className='PagesCalculadora' >
       <header>
         <h1> Calculadora </h1>
       </header>

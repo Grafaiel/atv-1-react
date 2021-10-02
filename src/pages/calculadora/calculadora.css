@@ -1,0 +1,47 @@
+.PagesCalculadora {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 20fr 30fr 30fr 20fr;
+  grid-template-rows: 50fr 50fr;
+  height: 30vh;
+}
+
+.PagesCalculadora header {
+  text-align: center;
+  grid-column: 1/5;
+  grid-row: 1/1;
+}
+
+.PagesCalculadora--div {
+  text-align: left;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.PagesCalculadora--div--input {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.PagesCalculadora--div--input input {
+  font-size: 1.5rem;
+  margin: 20px;
+  text-align: left;
+  padding: 10px 15px;
+  border: 3px solid black;
+}
+
+.PagesCalculadora--div--resultado{
+ display: flex;
+ align-items: stretch;
+ justify-content: center;
+}
+
+.PagesCalculadora--div--resultado p {
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 15px 15px;
+  font-size: 1.5rem;
+}

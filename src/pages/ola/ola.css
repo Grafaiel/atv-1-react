@@ -1,0 +1,26 @@
+.PagesOla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+}
+
+.PagesOla p {
+  font-size: 2rem;
+}
+
+.PagesOla a{
+  color: rgb(0, 158, 0);
+}
+
+.PagesOla a:hover {
+  color: green;
+}
+
+.PagesOla a:hover {
+  color: rgb(0, 80, 0);
+}
+
+.PagesOla a:active {
+  color: rgb(0, 56, 0);
+}
